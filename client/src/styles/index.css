@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  font-family: 'PT Serif', serif;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
+  --color-text: #81AFDD;
+  --color-button: #ffcda3;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body {
+  background: #F2F6FF;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+a:hover {
+  color: #0077CC;
+  /* color: slateblue; */
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  transform: translateY(-3px);
+  border-radius: 50%;
+}
+
+.username {
+  color: slategray;
+  font-weight: 800;
+}
+
+.activated {
+  border-bottom: 1px solid #000;
+}
+
+.navbar_glass {
+  /* background:rgba(225,225,225,0.5); */
+  background: rgba(242, 246, 255, 0.5);
+  backdrop-filter: blur(20px);
+}
+
+.neomorphism{
+  background-color: rgba(225, 225, 225, 0.1);
+  box-shadow: -3px -3px 5px #fff, 3px 3px 15px #000;
+}
+
+.gradient__text {
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.responsive_quill {
+  width: 50rem;
+}
+
+@media screen and (max-width:992px) {
+  .responsive_quill {
+    width: 100%;
+  }
+}
+
+/* ---------- Auth Page------------ */
+@import url('./auth.css');
+
+/* ---------- Loading Page------------ */
+@import url('./loading.css');
+
+/* ---------- Alert Page------------ */
+@import url('./alert.css');
+
+/* ---------- Profile Page------------ */
+@import url('./profile.css');
+
+/* ---------- Category Page------------ */
+@import url('./category.css');
+
+/* ---------- Home Page------------ */
+@import url('./home.css');
+
+/* ---------- Blogs_Category Page------------ */
+@import url('./blogs_category.css');
+
+/* ----------Footer------------ */
+@import url('./footer.css');
+
+/* ----------Cards------------ */
+@import url('./cards.css');

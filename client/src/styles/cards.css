@@ -1,0 +1,75 @@
+.button__overlay {
+  background-color: #ffcda3;
+  border-radius: 10px;
+  border: none;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: .3px;
+  line-height: 1;
+  margin-right: auto;
+  margin-bottom: 7px;
+  padding: 13px 21px;
+}
+
+.scale_image {
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.scale_image img {
+  width: 100%;
+  cursor: pointer;
+  transition: 0.5s all ease-in-out;
+}
+
+.scale_image:hover img {
+  transform: scale(1.1);
+}
+
+.scale_button {
+  overflow: auto;
+}
+
+.scale_button:hover button {
+  transition: 0.35s;
+  transform: translateY(-7px);
+  box-shadow: 14px 14px 36px rgba(0,0,0,0.3);
+}
+
+.scale_card{
+  overflow: auto;
+}
+
+.scale_card:hover {
+  transition: 0.25s;
+  transform: translateY(-5px);;
+  box-shadow: 30px 30px 64px rgba(0,0,0,0.05);
+}
+
+.scale_button button {
+  transition: 0.5s all ease-in-out;
+}
+
+.scale_button:hover button {
+  -webkit-animation: shadow-pop-tr 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	        animation: shadow-pop-tr 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+
+/*---------------------CardVert / CardHorizontal----------------*/
+@media screen and (max-width: 486px) {
+  .card__none p{
+      display: none;
+  }
+}
+
+/*---------------------CardGrid----------------*/
+.text__overlay {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.text__overlay:hover h3,
+.text__overlay:hover p {
+  transition: 0.35s;
+  transform: translateY(-7px);
+}
